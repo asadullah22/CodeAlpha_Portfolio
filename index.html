@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asad | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>Asad</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <h1>Hi, I'm Asad 👋</h1>
+  <p id="typing"></p>
+  <button onclick="scrollToSection('projects')">View Work</button>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a Full Stack Developer with experience in modern web technologies.</p>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Image Gallery</h3>
+    <p>Modern gallery with filters & lightbox</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Calculator</h3>
+    <p>Glass UI calculator with keyboard support</p>
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
